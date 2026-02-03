@@ -1,2 +1,1 @@
-# CSC-134
-FTCC C++ class
+# CSC-134FTCC C++ class
