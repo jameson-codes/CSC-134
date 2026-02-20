@@ -8,6 +8,7 @@ Assumption: Sales tax is 7.5%
 */
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -36,12 +37,16 @@ int main() {
     // add tax and tips
     total_price = sub_total + tip_amount + tax_amount;
 
-    // Present the output
-    cout << "YOUR ORDER" << endl << "----------------------" << endl;
+    // Present the output with 2 decimal places.
+    cout << setprecision(2) << fixed; // remember to import <iomanip>
+    cout << "YOUR ORDER" << endl << "-------------------------" << endl;
     cout << num_meals << " x " << meal_name << "\t$" << meal_price << endl;
     cout << "Subtotal: \t$" << sub_total << endl;
     cout << "Tip: \t\t$" << tip_amount << endl;
     cout << "Tax: \t\t$" << tax_amount << endl;
-    cout << "----------------------" << endl;
+    cout << "-------------------------" << endl;
+    cout << "Total: \t\t$" << total_price << endl;
+    cout << "THANK YOU COME AGAIN:" << endl;
+
     return 0; // no errors
 }
