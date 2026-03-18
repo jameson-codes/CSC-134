@@ -1,6 +1,7 @@
 /*
 CSC- 134
 M3T1
+Jameson C
 03/17/26
 Ask the user for the width and length of two rectangles
 Find the Area*/
