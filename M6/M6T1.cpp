@@ -34,5 +34,28 @@ void part1() {
         count++;
     }
     cout << "Total = " << cars_total << endl;
+    cars_avg = (double) cars_total / SIZE;
+    cout << "Average = " << cars_avg << endl;
+}
+
+void part2() {
+    const int SIZE = 5;
+    string days[SIZE] = {"M", "T", "W", "Th", "F"};
+    int cars [SIZE];
+    int cars_total = 0;
+    double cars_avg = 0.0;
+
+    for (int i=0; i < SIZE; i++) {
+        cout << "# on " << days[i] << ": ";
+        cin >> cars [i];
+    }
+
+    cout << "Day\tcars" << endl;
+    for (int i=0; i < SIZE; i++) {
+     cout << days[i] << "\t" << cars[i] << endl;
+    cars_total += cars[i];
+    }
+    cars_avg = (double) cars_total / SIZE;
+    cout << "Total = "  << cars_total << endl;
     cout << "Average = " << cars_avg << endl;
 }
