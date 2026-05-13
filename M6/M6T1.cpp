@@ -52,7 +52,7 @@ void part2() {
 
     cout << "Day\tcars" << endl;
     for (int i=0; i < SIZE; i++) {
-     cout << days[i] << "\t" << cars[i] << endl;
+     cout << days[i] << "\t" << "|" << cars[i] << endl;
     cars_total += cars[i];
     }
     cars_avg = (double) cars_total / SIZE;
